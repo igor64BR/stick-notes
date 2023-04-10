@@ -4,7 +4,7 @@ import { View } from "react-native";
 import Header from "./header";
 import styles from "./style";
 import { StyleSheet } from "react-native";
-import { Divider } from "@rneui/themed";
+import { Divider } from "@react-native-material/core";
 import CustomIcon from "./customIcon";
 
 export default function InputCard({ onAdd }) {

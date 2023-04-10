@@ -6,14 +6,12 @@ import colors from "../colors";
 
 export default function CustomIcon({ text, onPressIn }) {
   return (
-    <View style={styles.iconRegion}>
-      <View style={styles.iconButton}>
-        <TouchableOpacity
-          onPressIn={onPressIn}
-        >
+    <TouchableOpacity onPressIn={onPressIn}>
+      <View style={styles.iconRegion}>
+        <View style={styles.iconButton}>
           <Text style={{ color: colors.orange }}>{text}</Text>
-        </TouchableOpacity>
+        </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }
